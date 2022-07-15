@@ -8,12 +8,13 @@ function estrutura(){
     var ramificacao = document.getElementById('ramificacao').value
     
 
-    var nom = null
-    var lig = null
-    var cic = null
-    var ramif = null
-    var pref = null
-    var inf = null
+    var nom = ""
+    var lig = ""
+    var cic = ""
+    var ramif = ""
+    var pref = ""
+    var inf = ""
+    var perg = ""
 
     if (carbonos == '1') {
         nom = "met"
@@ -75,13 +76,13 @@ function estrutura(){
     }
 
     if (pergunta == '1') {
-        print("benzeno")
+        perg = "benzeno"
     }
     else if ( pergunta == '2' ){
-        print("")
+        console.log("")
     }
     else {
-        print("Error")
+        console.log("Error")
     }
 
 
@@ -191,10 +192,10 @@ function estrutura(){
         inf = "-10-"
     }
     else {
-        print("Error")
+        console.log('Erro')
     }
 
     resultado = document.getElementById('resultado')
-    resultado.textcontent= pref+ramif+cic+nom+inf+lig
+    resultado.textContent= perg+" "+pref+ramif+cic+nom+inf+lig
     console.log(pref+ramif+cic+nom+inf+lig)
 }
